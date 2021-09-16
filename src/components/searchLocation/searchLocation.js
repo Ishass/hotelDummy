@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useHistory } from "react-router-dom";
 import styles from './searchLocation.module.css'
 import SearchHotel from '../searchHotel/searchHotel'
-import { useHistory } from "react-router-dom";
+
 let autoComplete;
-
-
 
 const loadCustomScript = (url, callbackFunc) => {
     let scriptTag = document.createElement("script");

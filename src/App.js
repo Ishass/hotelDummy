@@ -1,20 +1,15 @@
+import {  Route, Switch } from "react-router-dom";
+import { connect } from 'react-redux';
 import './App.css';
 import SearchLocation from './components/searchLocation/searchLocation';
-import DetailPage from './components/detailPage/detailPage';
-import HotelListing from './components/detailPage/hotelListing';
-import {  Route, Switch } from "react-router-dom";
+import DetailPage from './components/hotelDetail/hotelDetail';
+import HotelListing from './components/hotelDetail/hotelListing';
 import ListContext from './contextStore/listStore';
 
-const listOfHotels=[
-  {name:'FabHotel La Paz Stay',location:'New Delhi',Id:1},
-  {name:'FabHotel Rove',location:'New Delhi',Id:2},
-  {name:'FabHotel Le Grand',location:'New Delhi',Id:3},
-  {name:'FabHotel Vista Suite',location:'Banglore',Id:4},
-  {name:'FabHotel Sahar Garden',location:'Mumbai',Id:5},
-]
+
 function App(props) {
   return (
-      <ListContext.Provider value={{listOfHotels:listOfHotels}}>
+      <ListContext.Provider value={{listOfHotels:props.listOfHotels}}>
     <div className="App">
       <Switch>
       <Route exact path='/'><SearchLocation data-testid="search-location" onChange={() => null}  /></Route>
@@ -25,5 +20,9 @@ function App(props) {
       </ListContext.Provider>
   );
 }
-
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    listOfHotels: state.listOfHotels
+  };
+}
+export default connect(mapStateToProps) (App);

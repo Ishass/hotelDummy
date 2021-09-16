@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext} from "react";
 import { NavLink } from "react-router-dom";
-import styles from './searchHotel.module.css';
 import HotelIcon from '@material-ui/icons/Hotel';
+import styles from './searchHotel.module.css';
 import ListContext from '../../contextStore/listStore';
 
 

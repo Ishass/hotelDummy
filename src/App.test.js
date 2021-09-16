@@ -3,8 +3,8 @@ import App from './App';
 import { MemoryRouter,Router } from "react-router-dom";
 import { createMemoryHistory } from 'history'
 import SearchLocation from './components/searchLocation/searchLocation'
-import DetailPage from './components/detailPage/detailPage'
-import HotelListing from './components/detailPage/hotelListing'
+import DetailPage from './components/hotelDetail/hotelDetail'
+import HotelListing from './components/hotelDetail/hotelListing'
 
 
 test('renders learn react link', () => {
