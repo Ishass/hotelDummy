@@ -1,0 +1,32 @@
+.searchLocation {
+    display: flex;
+    width: 60vw;
+    border-radius: 20px;
+    border: #c4bdbd 1px solid;
+    margin: 0 auto;
+  }
+  
+  .searchLocation:focus-within {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  }
+  
+  .searchLocation:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+  }
+  
+  .searchLocation input {
+    height: 5vh;
+    width: 100%;
+    padding: 9px;
+    border: none;
+    font-size: 16px;
+    border-radius: 24px;
+  }
+  
+  .searchLocation input:focus {
+    outline: none;
+  }

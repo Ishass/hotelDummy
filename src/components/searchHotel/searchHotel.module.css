@@ -1,0 +1,26 @@
+.searchHotel{
+    margin-top:33vh;
+    width: 60vw;
+    margin-left: 45vh;
+    text-align: left;
+    line-height: 5vh;
+}
+.searchHotel label{
+    font-weight: bold;
+    /* border-bottom: 1px solid grey; */
+    width: 100%;
+}
+.displayItems{
+    display:flex;
+    /* justify-content:space-between; */
+    align-items: self-end;
+    border-bottom: 1px solid rgb(161, 160, 160);
+
+}
+
+a{
+    text-decoration: none;
+}
+a div{
+    color: black;
+}

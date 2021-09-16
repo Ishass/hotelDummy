@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+}
+a div{
+    color: black;
+}
+.displayItems{
+    display:flex;
+    /* justify-content:space-between; */
+    align-items: self-end;
+    border-bottom: 1px solid rgb(161, 160, 160);
+
+}
