@@ -1,14 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
 import { MemoryRouter,Router } from "react-router-dom";
 import { createMemoryHistory } from 'history'
+import { Provider } from 'react-redux'
+import store from './redux/store';
 import SearchLocation from './components/searchLocation/searchLocation'
 import DetailPage from './components/hotelDetail/hotelDetail'
+import App from './App';
 import HotelListing from './components/hotelDetail/hotelListing'
 
 
+
 test('renders learn react link', () => {
-  render(<MemoryRouter><App /></MemoryRouter>);
+  render(<Provider store={store}><MemoryRouter><App /></MemoryRouter></Provider>);
   screen.debug()
 });
 
