@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
-import styles from './searchLocation.module.css'
+import './searchLocation.css'
 import SearchHotel from '../searchHotel/searchHotel'
 
 let autoComplete;
@@ -61,7 +61,7 @@ function SearchLocation(props) {
 
   return (
     <>
-    <div className={styles.searchLocation}>
+    <div className="searchLocation">
       <input
       data-testid='input'
         ref={autoCompleteRef}

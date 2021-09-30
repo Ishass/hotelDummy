@@ -1,0 +1,31 @@
+@border-color-grey: rgba(223,225,229,0);
+.searchLocation {
+    display: flex;
+    width: 60vw;
+    border-radius: 20px;
+    border: #c4bdbd 1px solid;
+    margin: 0 auto;
+    &:focus-within{
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-color:@border-color-grey;
+      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    }
+    &:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color:@border-color-grey;
+    }
+    input{
+      height: 5vh;
+      width: 100%;
+      padding: 9px;
+      border: none;
+      font-size: 16px;
+      border-radius: 24px;
+    }
+    input:focus{
+    outline: none;
+    }
+  }
+  
+  

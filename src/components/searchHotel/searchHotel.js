@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext} from "react";
 import { NavLink } from "react-router-dom";
 import HotelIcon from '@material-ui/icons/Hotel';
-import styles from './searchHotel.module.css';
+import  './searchHotel.css';
 import ListContext from '../../contextStore/listStore';
 
 
@@ -34,7 +34,7 @@ let renderHotelDetail=()=>{
         displayHotels.map((item,index)=>{
             return(
                 <NavLink key={index} to={`/${item.Id}`}>
-                <div key={index}  className={styles.displayItems}>
+                <div key={index}  className="displayItems">
                       <HotelIcon style={{color: '#b7b0b0'}}/>
                 <div style={{paddingLeft:'2vh',paddingRight:'2vh'}}>
                       {item.name}
@@ -50,7 +50,7 @@ let renderHotelDetail=()=>{
         )
 }
   return (
-    <div className={styles.searchHotel}>
+    <div className="searchHotel">
     {displayHotels.length>0?
     <>
     <label>Hotels</label>

@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+a div {
+  color: black;
+}
+.displayItems {
+  display: flex;
+  align-items: self-end;
+  border-bottom: 1px solid #a1a0a0;
+}
+/*# sourceMappingURL=hotelListing.css.map */

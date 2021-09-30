@@ -1,0 +1,23 @@
+.searchHotel {
+  margin-top: 33vh;
+  width: 60vw;
+  margin-left: 45vh;
+  text-align: left;
+  line-height: 5vh;
+}
+.searchHotel label {
+  font-weight: bold;
+  width: 100%;
+}
+.displayItems {
+  display: flex;
+  align-items: self-end;
+  border-bottom: 1px solid #a1a0a0;
+}
+a {
+  text-decoration: none;
+}
+a div {
+  color: black;
+}
+/*# sourceMappingURL=searchHotel.css.map */

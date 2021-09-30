@@ -2,7 +2,7 @@ import { useParams,NavLink } from 'react-router-dom';
 import React, { useContext,useState,useEffect } from "react";
 import HotelIcon from '@material-ui/icons/Hotel';
 import ListContext from '../../contextStore/listStore';
-import  styles from './hotelListing.module.css';
+import './hotelListing.css';
 
 function HotelListing(props) {
     const params = useParams();
@@ -33,7 +33,7 @@ function HotelListing(props) {
             return(
                 <NavLink key={key} to={`/${item.Id}`}>
 
-                 <div  key={key}  className={styles.displayItems}>
+                 <div  key={key}  className="displayItems">
                       <HotelIcon style={{color: '#b7b0b0'}}/>
                 <div style={{paddingLeft:'2vh',paddingRight:'2vh'}}>
                       {item.name}
