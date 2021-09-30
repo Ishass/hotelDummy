@@ -50,7 +50,7 @@ function SearchLocation(props) {
   let history = useHistory();
   useEffect(() => {
     loadCustomScript(
-      `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_PLACE_API_KEY}&sensor=false&libraries=places`,
+      `https://maps.googleapis.com/maps/api/js?key='AIzaSyCtdaHsIicmzziPVLzBFe8RVKvXdZGHHFQ'&sensor=false&libraries=places`,
       () => handleScriptLoad(setQuery, autoCompleteRef,setAddObj)
     );
     
